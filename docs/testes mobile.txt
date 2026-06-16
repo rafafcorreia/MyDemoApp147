@@ -1,0 +1,34 @@
+Testes Mobile
+
+Existem vários tipos de aplicativos (apps)
+- Celulares/Smartphone: Android / IPhone <--- foco no Android
+- Tablets: Android / IPhone
+- SmartTV
+- Wearables (vestiveis): smartband (pulseira), smartwatch (relógio), smartglasses (oculos)
+- Eletro/Eletronicos
+- Sistema de mídia de automóvel
+
+Pré-requisitos
+Cenário 1 - Testes Locais
+- SDK (Kit de comunicação/desenvolvimento) --> existe um para cada versão do SO (Android)
+- Emulador --> Android Studio
+- Appium Service/Server/Desktop
+
+Cenário 2 - Testes Remoto
+- Conta em um serviço (Saucelabs, Browserstack, Perfecto, outros)
+
+Comuns aos 2 cenários:
+- APK do app alvo (instalador do aplicativo que queremos testar)
+- APK Info (descobrir appPackage e o appActivity)
+- Appium Inspector
+
+Maquina Ideal
+- Processador I5, I7 ou I9, ou equivalente AMD - Familias 12 em diante
+- GPU (Placa de Video) - não ter uma placa de vídeo offline
+- Memória RAM: 16 GB, 32 GB ou mais
+- Disco: SSD pelo 512 Gb ou 1 Tb
+
+Executar testes, tanto no local ou no remoto:
+- emuladores
+- aparelhos fisicos
+
