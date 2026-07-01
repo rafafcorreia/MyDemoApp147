@@ -9,8 +9,9 @@ import { expect } from "expect-webdriverio";
 async function main() {
   const caps = {
     platformName: "Android",
+    "appium:app": "storage:filename=mda-2.2.0-25.apk",
     "appium:platformVersion": "13.0",
-    "appium:deviceName": "emulator5554",
+    "appium:deviceName": "Google Pixel 4 Emulator",
     "appium:deviceOrientation": "portrait",
     "appium:appPackage": "com.saucelabs.mydemoapp.android",
     "appium:appActivity":
@@ -25,10 +26,11 @@ async function main() {
     unhandledPromptBehavior: "ignore",
   };
   const driver = await remote({
-    protocol: "http",
-    hostname: "127.0.0.1",
-    port: 4723,
-    path: "/",
+    user: process.env.SAUCE_USER,
+    key: process.env.SAUCE_KEY,
+    hostname: "ondemand.us-west-1.saucelabs.com",
+    port: 443,
+    baseUrl: "wd/hub",
     capabilities: caps,
   });
 
